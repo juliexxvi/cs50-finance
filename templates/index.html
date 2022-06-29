@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Registered
+{% endblock %}
+
+{% block main %}
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Symbol</th>
+          <th scope="col">Name</th>
+          <th scope="col">Shares</th>
+          <th scope="col">Price</th>
+          <th scope="col">TOTAL</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in holdings %}
+        <tr>
+            <td>{{row.symbol}}</td>
+            <td>{{row.name}}</td>
+            <td>{{row.shares}}</td>
+            <td>{{usd(row.price)}}</td>
+            <td>{{usd(row.total)}}</td>
+        </tr>
+        {% endfor %}
+        <tr>
+          <td>CASH</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>{{usd(cash)}}</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <th scope="row">{{usd(total)}}</th>
+        </tr>
+        </tr>
+      </tbody>
+    </table>
+
+{% endblock %}

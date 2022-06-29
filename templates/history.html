@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block main %}
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Symbol</th>
+          <th scope="col">Shares</th>
+          <th scope="col">Price</th>
+          <th scope="col">Transacted</th>
+        </tr>
+      </thead>
+      <tbody>
+    {# transaction la cai minh thich ten dat ten gi cung duoc, con transactions la bien lay tu python vao #}
+        {% for transaction in transactions %}
+        <tr>
+            <td>{{transaction.symbol}}</td>
+            <td>
+              {% if transaction.transaction_type == 'SELL' %}
+              -
+              {% else %}
+              +
+              {% endif %}
+              {{transaction.shares}}
+            </td>
+            <td>{{transaction.price}}</td>
+            <td>{{transaction.date}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+{% endblock %}
