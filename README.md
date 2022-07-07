@@ -55,6 +55,8 @@ A web app that allows a user to manage portfolios of stocks. This app checks rea
 
 - `History` displays a table summarizing all of a user’s transactions ever, listing row by row each and every buy and every sell.
 
+<img src="./screenshots/history.png" width="1000">
+
 ## Todo
 
 - Add a list of all stock names so the user knows what the stock code they need to buy
