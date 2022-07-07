@@ -15,26 +15,26 @@ A web app that allows a user to manage portfolios of stocks. This app checks rea
 - Require that a user input a `username`. There will have a message pops up if the user’s input is blank or the username already exists.
 - Require that a user input a `password`, and then that same `password again`. There will have a message pops up if either input is blank or the passwords do not match.
 
-<img src="./screenshots/register.png" width="400">
+<img src="./screenshots/register.png" width="1000">
 
 - Once the user is registered, the user could be able to `login`.
 
-<img src="./screenshots/login.png" width="400">
+<img src="./screenshots/login.png" width="1000">
 
 ### Quote
 
 - `Quote` allows a user to look up a stock’s current price.
 
-<img src="./screenshots/quote.png" width="400">
+<img src="./screenshots/quote.png" width="1000">
 
-<img src="./screenshots/stock-price.png" width="400">
+<img src="./screenshots/stock-price.png" width="1000">
 
 ### Buy
 
 - `Buy` allows a user to buy more shares of a stock that he or she like.
 - This requires a user to input a stock’s symbol and a number of shares. There will have a message pops up if the input is not valid or the symbol does not exist.
 
-<img src="./screenshots/buy.png" width="400">
+<img src="./screenshots/buy.png" width="1000">
 
 - When a purchase is complete, the user will be redirected back to the dashboard page.
 
@@ -42,14 +42,14 @@ A web app that allows a user to manage portfolios of stocks. This app checks rea
 
 - `Dashboard` displays a table summarizing the current the user's purchase or sale
 
-<img src="./screenshots/index.png" width="400">
+<img src="./screenshots/index.png" width="1000">
 
 ### Sell
 
 - `Sell` enables a user to sell shares of a stock that he or she owns.
 - This requires a user to input a stock’s symbol and a number of shares. There will have a message pops up if the user fails to select a stock or if the user does not own any shares of that stock.
 
-<img src="./screenshots/sell.png" width="400">
+<img src="./screenshots/sell.png" width="1000">
 
 ### History
 
